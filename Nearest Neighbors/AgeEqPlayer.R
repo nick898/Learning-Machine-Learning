@@ -1,5 +1,7 @@
 AgeEqPlayer = function(plid_age, df){
-  
+# Given a player's age and a data frame of player season data this function computes
+# the career statistics of all players of the same age
+
   df = subset(df, age <= plid_age)
   Pid_Unique = unique(df$playerID)
   R = length(Pid_Unique)

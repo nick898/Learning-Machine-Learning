@@ -1,5 +1,11 @@
 NearNeigh = function(pid, NumN, df){
-  
+# This function takes as input a player ID, the number of neighbors, and a data frame consisting of 
+# player season statistics. Using this data it calculates the similarity of each player in the data set
+# to the given player specified by the player ID. 
+#
+# The output is a data frame of players who are most similar to the given player. The number of neighbors 
+# input 'NumN' specifies exactly how many similar players to find
+#
   Row = which(df$playerID == pid)
   Object = df[Row,]
   Data = df[-c(Row),]
