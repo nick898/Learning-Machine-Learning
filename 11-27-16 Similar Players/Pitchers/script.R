@@ -12,7 +12,7 @@ library(Lahman)
 
 #PLAYER INPUT
 Age = 26 #Player age
-pid = "porceri01" #Player ID 
+pid = "salech01" #Player ID 
 NumNeighbors = 10 #Set the number of players you'd like to find who are most similar to your given player
 
 
